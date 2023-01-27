@@ -1,107 +1,241 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  display: inline;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+}
+li {
+  float: left;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* a{
+  display: block;
+  padding: 8px;
+  background-color: #09ac9c;
+} */
+li{
+  display: block;
+  background-color: #09ac9c;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+ul {
+  background-color: #dddddd;
+}
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(43, 43, 43);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+li {
+  float: left;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-a {
-  color: inherit;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  
+}
+
+/* Footer css */
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  margin-top: 532px;
+  width: 100%;
+}
+
+/* logoin css */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1; width:390px; align-items: center; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #087cc4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.registerbtn {
+
+  padding: 10px 18px;
+  background-color:#04AA6D;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
   }
+}
+
+/* Rigester css */
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=number],input[type=date],input[type=email],input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+  border-bottom: 2px solid rgb(77, 77, 77);
+  opacity: 0.8;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(240, 240, 240);
+  outline: none;
+}
+
+hr {
+  border: 1px solid #e3e3e3;
+  margin-bottom: 35px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.loginbtn {
+  padding: 14px 20px;
+  background-color: #39a6ff;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.loginbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Card css */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 400px;
+  margin:90px 0px 0px 40px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.containers {
+  padding: 2px 16px;
+}
+.Cards{
+  display: flex;
+}
+
+
+
+/* Error css */
+
+.errors{
+  border: 2px solid rgb(230, 230, 230);
+  margin: 180px 0px 0px 400px;
+  width: 500px;
+  box-shadow: 1px 5px 5px 5px  rgb(236, 236, 236);
+  padding: 20px;
+ 
+}
+.errors h2{
+  color: red;
+}
+.errors p{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Geneva, Verdana, sans-serif;
 }
